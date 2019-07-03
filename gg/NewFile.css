@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+body {
+	padding: 0 30px;
+	font-size: 20px;
+	line-height: 22px;
+	font-family: "Georgia", serif;
+	background-color: #d2bcac;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: normal;
+}
+
+.style {
+	font-size: 20px;
+	padding: 20px;
+	background: green;
+	font: Arial, sans-serif;
+	color: white;
+	border-radius: 10px
+}
+
+.style1 {
+	font-size: 20px;
+	padding: 20px;
+	background: blue;
+	font: Arial, sans-serif;
+	border-radius: 10px
+}
+
+.style2 {
+	color: red;
+	font: Arial, sans-serif;
+	border-radius: 10px
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="NewFile.css">
+<meta charset="UTF-8" />
+<title>Вход</title>
+<script type="text/javascript"> 
+function valid1 (form){ 
+var fail = false; 
+var name = form.name.value; 
+var password = form.password.value;  
+if(name == ""|| name == " ") 
+alert ("Вы не ввели свое имя"); 
+else if(password == "") 
+alert("Вы не ввели пароль");  
+else
+	alert("Вы успешно вошли!");
+if(fail) 
+alert(fail);} 
+
+
+
+</script>
+</head>
+<body>
+	<div align="center">
+		<header>
+			<div align="right">
+				<a href="NewFile.html">
+					<button class="style">Регистрация</button>
+				</a> <a href="NewFile1.html">
+					<button class="style1">Вход</button>
+				</a> <a class="style2" href="Index.html">Главная</a>
+			</div>
+		</header>
+		<form action="" method="post" name="test" id="form">
+			<label for="name">Ваше имя:</label> <input type="text" name="name"
+				placeholder="Ваше имя" id="name" /><br />
+			<br /> <label for="password">Ваш пароль:</label> <input
+				type="password" name="password" placeholder="Введите пароль"
+				id="password" /><br />
+			<br />
+			<button onclick="valid1(form)">Вход</button>
+		</form>
+	</div>
+</body>
+</html>

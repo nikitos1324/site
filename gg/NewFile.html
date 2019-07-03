@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="NewFile.css">
+<meta charset="UTF-8" />
+<title>Регистрация</title>
+<script type="text/javascript"> 
+function valid (form){ 
+var fail = false; 
+var name = form.name.value; 
+var password = form.password.value; 
+var Repassword = form.Repassword.value; 
+var state = form.state.value; 
+if(name == ""|| name == " ") 
+alert ("Вы не ввели свое имя"); 
+else if(password == "") 
+alert("Вы не ввели пароль"); 
+else if (password != Repassword) 
+alert("Пароли не совпадают"); 
+else if(state == "") 
+alert("Укажите пол"); 
+else
+	alert("Вы успешно зарегестрированы!");
+if(fail) 
+alert(fail);} 
+
+
+
+</script>
+</head>
+<body>
+	<div align="center">
+		<header>
+			<div align="right">
+				<a href="NewFile.html">
+					<button class="style">Регистрация</button>
+				</a> <a href="NewFile1.html">
+					<button class="style1">Вход</button>
+				</a> <a class="style2" href="Index.html">Главная</a>
+			</div>
+		</header>
+		<form action="" method="post" name="test" id="form">
+			<label for="name">Ваше имя:</label> <input type="text" name="name"
+				placeholder="Ваше имя" id="name" /><br />
+			<br /> <label for="password">Ваш пароль:</label> <input
+				type="password" name="password" placeholder="Введите пароль"
+				id="password" /><br />
+			<br /> <label for="Repassword">Повторите пароль:</label> <input
+				type="password" name="Repassword" placeholder="Повторите пароль"
+				id="Repassword" /><br />
+			<br /> <span>Пол:</span> <input type="radio" name="state" id="male"
+				value="Мужской" /> <label for="male">Мужской</label> <input
+				type="radio" name="state" id="female" value="Женский" /> <label
+				for="female">Женский</label> <br />
+			<br />
+			<button onclick="valid(form)">Регистрация</button>
+
+		</form>
+	</div>
+</body>
+</html>
